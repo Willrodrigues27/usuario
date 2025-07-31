@@ -56,6 +56,7 @@ public class UsuarioConverter {
                 .build();
     }
 
+
     public UsuarioDTO paraUsuarioDTO(Usuario usuarioDTO){
         return UsuarioDTO.builder()
                 .nome(usuarioDTO.getNome())
@@ -67,12 +68,12 @@ public class UsuarioConverter {
     }
 
     public List<EnderecoDTO> paraListaEnderecoDTO(List<Endereco> enderecoDTOS){
-//        return enderecoDTOS.stream().map(this::paraEndereco).toList();
-        List<EnderecoDTO> enderecos = new ArrayList<>();
-        for(Endereco enderecoDTO : enderecoDTOS){
-            enderecos.add(paraEndereco(enderecoDTO));
-        }
-        return enderecos;
+        return enderecoDTOS.stream().map(this::paraEnderecoDTO).toList();
+//        List<EnderecoDTO> enderecos = new ArrayList<>();
+//        for(Endereco enderecoDTO : enderecoDTOS){
+//            enderecos.add(paraEndereco(enderecoDTO));
+//        }
+//        return enderecos;
     }
 
     public EnderecoDTO paraEnderecoDTO(Endereco enderecoDTO){

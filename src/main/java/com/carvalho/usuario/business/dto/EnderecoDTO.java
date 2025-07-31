@@ -1,13 +1,13 @@
 package com.carvalho.usuario.business.dto;
 
-import jakarta.persistence.Column;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@SuperBuilder
 
 public class EnderecoDTO {
 
