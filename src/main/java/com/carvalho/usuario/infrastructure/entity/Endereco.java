@@ -3,6 +3,7 @@ package com.carvalho.usuario.infrastructure.entity;
 import com.carvalho.usuario.business.dto.EnderecoDTO;
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
@@ -10,7 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "endereco")
-@Builder
+@SuperBuilder
 
 public class Endereco extends EnderecoDTO {
 
