@@ -11,6 +11,7 @@ import lombok.experimental.SuperBuilder;
 
 public class EnderecoDTO {
 
+    private Long id;
     private String rua;
     private Long numero;
     private String complemento;
